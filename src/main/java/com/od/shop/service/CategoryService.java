@@ -38,4 +38,7 @@ public class CategoryService {
         Category c= categoryDAO.findOne(id);
         return c;
     }
+    public void update(Category bean) {
+        categoryDAO.save(bean);
+    }
 }
