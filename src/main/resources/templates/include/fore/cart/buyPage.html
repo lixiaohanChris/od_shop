@@ -44,7 +44,6 @@
 	</script>
 	<div class="buyPageDiv">
 		<div class="buyFlow">
-			<img class="pull-left" src="img/site/simpleLogo.png">
 			<img class="pull-right" src="img/site/buyflow.png">
 			<div style="clear:both"></div>
 		</div>
@@ -81,7 +80,6 @@
 				<thead>
 					<tr>
 						<th colspan="2" class="productListTableFirstColumn">
-							<img class="tmallbuy" src="img/site/tmallbuy.png">
 							<a class="marketLink" href="#nowhere">店铺：天猫店铺</a>
 							<a class="wangwanglink" href="#nowhere"> <span class="wangwangGif"></span> </a>
 						</th>
@@ -107,10 +105,7 @@
 								<a  :href="'product?pid='+oi.product.id" class="orderItemProductLink">
 									{{oi.product.name}}
 								</a>
-								<img src="img/site/creditcard.png" title="支持信用卡支付">
-								<img src="img/site/7day.png" title="消费者保障服务,承诺7天退货">
-								<img src="img/site/promise.png" title="消费者保障服务,承诺如实描述">
-							</td>
+
 							<td>
 								<span class="orderItemProductPrice">
 									{{oi.product.promotePrice | formatMoneyFilter}}

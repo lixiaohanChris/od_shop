@@ -35,19 +35,19 @@
 				var top = $(this).position().top;
 				var width = $(this).css("width");
 				var destLeft = parseInt(left) + parseInt(width)/2;
-				$("img#catear").css("left",destLeft);
-				$("img#catear").css("top",top-20);
-				$("img#catear").fadeIn(500);
+				$("img#nieeye").css("left",destLeft);
+				$("img#nieeye").css("top",top-35);
+				$("img#nieeye").fadeIn(500);
 						
 			});
 			$("div.rightMenu span").mouseleave(function(){
-				$("img#catear").hide();
+				$("img#nieeye").hide();
 			});
-
-    		var left = $("div#carousel-of-product").offset().left;
-    		$("div.categoryMenu").css("left",left-20);
-    		$("div.categoryWithCarousel div.head").css("margin-left",left);
-    		$("div.productsAsideCategorys").css("left",left-20);		
+			
+			var left = $("div#carousel-of-product").offset().left;
+			$("div.categoryMenu").css("left",left-20);
+			$("div.categoryWithCarousel div.head").css("margin-left",left);
+			$("div.productsAsideCategorys").css("left",left-20);	
     		
     		$("div.productsAsideCategorys div.row a").each(function(){
     			var v = Math.round(Math.random() *6);
@@ -96,7 +96,7 @@
 	</script>
 
 
-	<title>模仿天猫官网</title>
+	<title>542商城</title>
 	<div class="homepageDiv">
 		<div th:replace="include/fore/home/categoryAndcarousel::html" ></div>	
 		<div th:replace="include/fore/home/homepageCategoryProducts::html" ></div>	
